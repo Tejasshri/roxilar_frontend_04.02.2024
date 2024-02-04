@@ -1,0 +1,11 @@
+.category-chart-container {
+  border-top: 2px solid rgb(56, 101, 178);
+  font-family: bree serif, "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* *{
+    border: 1px solid grey;
+} */

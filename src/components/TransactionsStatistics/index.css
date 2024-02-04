@@ -1,0 +1,33 @@
+.transactions-statistics {
+  background-color: rgb(230, 255, 247);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgb(0, 136, 255);
+  border-radius: 10px;
+  color: white;
+  padding: 10px;
+}
+
+.statistics-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.statistics-item p {
+  padding: 0;
+}
+
+.statistics-title {
+  font-family: bree serif, "Times New Roman", Times, serif;
+}

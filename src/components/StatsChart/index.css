@@ -1,0 +1,8 @@
+.chart-container {
+  height: 500px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Bree serif, "Times New Roman", Times, serif;
+}
