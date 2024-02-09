@@ -10,6 +10,8 @@ import "./index.css";
 import { StatsChart } from "../StatsChart";
 import CategoryChart from "../CategoryChart";
 
+const url = "https://backendof.onrender.com";
+
 const monthsData = [
   { monthNo: 1, monthName: "January" },
   { monthNo: 2, monthName: "Febrary" },
@@ -80,7 +82,7 @@ class Dashboard extends Component {
       this.setState({ apiStatus: apiStatusConstant.inprogress });
       const { selectedMonth, searchText, pageNo } = this.state;
       const response = await fetch(
-        `https://backendof.onrender.com/sales?month=${selectedMonth}&search_q=${searchText}&page=${pageNo}`
+        `${url}/sales?month=${selectedMonth}&search_q=${searchText}&page=${pageNo}`
       );
       const data = await response.json();
       this.setState({ transactionsData: data });
@@ -97,7 +99,7 @@ class Dashboard extends Component {
       this.setState({ apiStatusStatistics: apiStatusConstant.inprogress });
       const { selectedMonth } = this.state;
       const response = await fetch(
-        `https://backendof.onrender.com/all-statistics?month=${selectedMonth}`
+        `${url}/all-statistics?month=${selectedMonth}`
       );
       const data = await response.json();
       console.log(data);
@@ -293,7 +295,7 @@ class Dashboard extends Component {
               </button>
               &nbsp;-&nbsp;
               <button type="button" onClick={this.next}>
-                Next &gt; 
+                Next &gt;
               </button>
             </div>
             <p>Per Page : 10</p>
