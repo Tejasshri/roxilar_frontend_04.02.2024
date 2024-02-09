@@ -10,7 +10,7 @@ import "./index.css";
 import { StatsChart } from "../StatsChart";
 import CategoryChart from "../CategoryChart";
 
-const url = "https://backendof.onrender.com";
+const url = "https://roxilarbackend.onrender.com";
 
 const monthsData = [
   { monthNo: 1, monthName: "January" },
